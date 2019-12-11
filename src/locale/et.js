@@ -1,4 +1,4 @@
-import dayjs from 'dayjs'
+import dayjs from '@loveholidays/dayjs'
 
 const locale = {
   name: 'et', // Estonian

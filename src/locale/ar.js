@@ -1,4 +1,4 @@
-import dayjs from 'dayjs'
+import dayjs from '@loveholidays/dayjs'
 
 const months = 'يناير_فبراير_مارس_أبريل_مايو_يونيو_يوليو_أغسطس_سبتمبر_أكتوبر_نوفمبر_ديسمبر'.split('_')
 

@@ -18,6 +18,8 @@ export default (o, c, dayjs) => { // locale needed later
         (instance ? instance.format('dd') : getShort(this, 'weekdaysMin', 'weekdays', 2)),
       weekdaysShort: instance =>
         (instance ? instance.format('ddd') : getShort(this, 'weekdaysShort', 'weekdays', 3)),
+      weekdays: instance =>
+        (instance ? instance.format('dddd') : getShort(this, 'weekdays')),
       longDateFormat: format => this.$locale().formats[format]
     }
   }

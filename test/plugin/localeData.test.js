@@ -30,6 +30,8 @@ it('Instance localeData', () => {
   expect(dayjsLocaleData.weekdaysMin()).toEqual(momentLocaleData.weekdaysMin())
   expect(dayjsLocaleData.weekdaysShort(d)).toBe(momentLocaleData.weekdaysShort(m))
   expect(dayjsLocaleData.weekdaysShort()).toEqual(momentLocaleData.weekdaysShort())
+  expect(dayjsLocaleData.weekdays(d)).toBe(momentLocaleData.weekdays(m))
+  expect(dayjsLocaleData.weekdays()).toEqual(momentLocaleData.weekdays())
   const longDateFormats = ['LT', 'LTS', 'L', 'LL', 'LLL', 'LLLL']
   longDateFormats.forEach((f) => {
     expect(dayjsLocaleData.longDateFormat(f)).toEqual(momentLocaleData.longDateFormat(f))

@@ -12,7 +12,7 @@ const localeDir = path.join(process.env.PWD, 'esm/locale');
     readLocaleDir.forEach(async (l) => {
       const filePath = path.join(localeDir, l)
       const readFile = await promisify(fs.readFile)(filePath, 'utf8')
-      const result = readFile.replace("'dayjs'", "'../index'")
+      const result = readFile.replace("'@loveholidays/dayjs'", "'../index'")
       await promisify(fs.writeFile)(filePath, result, 'utf8')
     })
   } catch (e) {

@@ -1,9 +1,9 @@
-import { PluginFunc, ConfigType } from 'dayjs'
+import { PluginFunc, ConfigType } from '../'
 
 declare const plugin: PluginFunc
 export = plugin
 
-declare module 'dayjs' {
+declare module '@loveholidays/dayjs' {
   interface Dayjs {
     calendar(referenceTime?: ConfigType, formats?: object): string
   }

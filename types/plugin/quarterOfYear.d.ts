@@ -1,9 +1,9 @@
-import { PluginFunc, ConfigType, QUnitType } from 'dayjs'
+import { PluginFunc, ConfigType, QUnitType } from '../'
 
 declare const plugin: PluginFunc
 export = plugin
 
-declare module 'dayjs' {
+declare module '@loveholidays/dayjs' {
   interface Dayjs {
     quarter(): number
 

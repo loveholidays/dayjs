@@ -1,9 +1,9 @@
-import { PluginFunc } from 'dayjs'
+import { PluginFunc } from '../'
 
 declare const plugin: PluginFunc
 export = plugin
 
-declare module 'dayjs' {
+declare module '@loveholidays/dayjs' {
   interface Dayjs {
     weekYear(): number
   }
